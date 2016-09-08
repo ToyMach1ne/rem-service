@@ -9,7 +9,7 @@
     </div>
   <footer class="footer">
         <div class="data-block wrap container-fluid">
-        <php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+        <?php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
             <div class="row">
                 <div class="col-lg-6">
                     <figure class="logo">
@@ -39,6 +39,7 @@
                     </div>
                 </div>
             </div>
+            <?php endwhile; endif; wp_reset_query(); ?>
         </div>
     </footer>
     <div class="botpanel">

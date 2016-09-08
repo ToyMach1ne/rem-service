@@ -659,5 +659,4 @@ function disable_emojicons_tinymce( $plugins ) {
 
 
 
-
 ?>

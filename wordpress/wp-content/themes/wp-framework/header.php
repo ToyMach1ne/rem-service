@@ -50,7 +50,7 @@
         <div class="hed-top">
             <div class="data-block wrap container-fluid">
                 <div class="row">
-                    <php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+                    <?php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
                     <div class="col-lg-6">
                         <figure class="logo">
                             <a href="<?php echo home_url(); ?>">
@@ -77,12 +77,12 @@
                             <div class="mode"><?php the_field('work_time'); ?></div>
                         </div>
                     </div>
-
+<?php endwhile; endif; wp_reset_query(); ?>
                 </div>
             </div>
         </div>
         <div class="block-forma wrap container-fluid">
-            <php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+            <?php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
             <div class="form-top-info">
                 <h1 class="zag-h1">
             <?php the_field('site_slogan'); ?>
@@ -140,5 +140,30 @@
                     </form>
                 </div>
             </div>
+            <?php endwhile; endif; wp_reset_query(); ?>
         </div>
+        <section class="block-info">
+        <div class="wrap container-fluid">
+            <?php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+            <div class="row">
+            <?php if( have_rows('our_committers') ):
+    while ( have_rows('our_committers') ) : the_row();
+    // vars
+        $image = get_sub_field('repeater_image');?>
+                <div class="col-lg-3">
+                    <div class="wrapper-bl">
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                        <span class="title-bl"><?php the_sub_field('committer_title'); ?></span>
+                        <p>
+                        <?php the_sub_field('committers_description'); ?>
+                        </p>
+                    </div>
+                </div>
+                <?php endwhile; else :
+                // no rows found
+                 endif; ?>
+            </div>
+            <?php endwhile; endif; wp_reset_query(); ?>
+        </div>
+    </section>
     </header>
