@@ -2719,3 +2719,15 @@ img.wp-smiley,
         background: none !important;
         padding: 0 !important;
     }
+.table-responsive {
+  table {
+    tbody {
+      tr {
+        height: 24px;
+        th {
+          height: 24px;
+        }
+      }
+    }
+  }
+}
