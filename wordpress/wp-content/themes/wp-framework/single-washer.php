@@ -38,32 +38,11 @@
             <div class="row">
                 <div class="list-li">
                     <ul>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-beskonechno-stiraet/">Бесконечно стирает</a></li>
-                        <li><a href="http://rem-service.by/v-stiralnoy-mashine-boltaetsya-baraban/">Болтается барабан</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-vse-vremya-nabiraet-vodu/">Все время набирает воду</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-vybivaet-probki/">Выбивает пробки</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-zavisaet/">Зависает</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-iskrit/">Искрит</a></li>
-                        <li><a href="http://rem-service.by/na-stiralnoj-mashine-migaut-lampochki/">Лампочки мигают</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-vklyuchaetsya/">Не включается</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-greet-vodu/">Не греет воду</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-zakryvaetsya/">Не закрывается</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-zalivaet-vodu/">Не заливает воду</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-krutit-baraban/">Не крутит барабан</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-otzhimaet/">Не отжимает</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-otkryvaetsya/">Не открывается</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-slivaet-vodu/">Не сливает воду</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-smyvaet-poroshok/">Не смывает порошок</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ne-stiraet-posle-nabora-vody/">Не стирает после набора воды</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-ostanavlivaetsya-v-processe-stirki/">Останавливается в процессе стирки</a></li>
-                        <li><a href="http://rem-service.by/iz-stiralnpj-mashiny-pahnet-kanalizaciej/">Пахнет канализацией</a></li>
-                        <li><a href="http://rem-service.by/nakip-v-stiralnoi-mashine/">Появилась накипь</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-poyavlyayutsya-pyatna/">Появляются пятна</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-rvet-bele/">Рвет белье</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-silno-shumit/">Сильно шумит</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-skripit/">Скрипит</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-stuchit-pri-otzhime-ili-stirke/">Стучит при отжиме или стирке</a></li>
-                        <li><a href="http://rem-service.by/stiralnaya-mashina-techet-ili-podtekaet/">Течет или подтекает</a></li>
+                    <?php query_posts("order=ASC&showposts=50&cat=11"); ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <?php endwhile; endif; ?>
+                                <?php wp_reset_query(); ?>
                     </ul>
                 </div>
             </div>
@@ -128,117 +107,26 @@
             <article id="post-209" class="post-209 post type-post status-publish format-standard has-post-thumbnail hentry category-brendy-stiralnyx-mashin">
                 <header class="entry-header">
                     <h1 class="entry-title">
-      Ремонт стиральных машин AEG   </h1>
+      Ремонт стиральных машин <?php the_title(); ?>  </h1>
                 </header>
                 <!-- .entry-header -->
                 <div class="entry-content">
-                    <p><strong>AEG</strong> – немецкий гигант в производстве бытовых электроприборов. За время существования компания создала обширный ряд моделей, отличающихся от соседей на витрине техническими возможностями и внешней привлекательностью.</p>
-                    <p>Ремонт стиральных машин AEG на дому следует проводить с пониманием сути процесса, используя профессиональные инструменты и «родные» комплектующие. Техника этого бренда относится к премиумной категории и неквалифицированный ремонт СМА АЕГ на дому может привести к серьёзным тратам на восстановление испорченных деталей.</p>
-                    <h3>Вот поломки, с которыми чаще всего к нам обращаются владельцы за ремонтом стиральных машин AEG:</h3>
-                    <ul>
-                        <li><strong>Программатор или электрическая система управления</strong> – машинка не запускается, не набирает воду, происходит некорректное выполнение заданных программ</li>
-                        <li><strong>Подшипники бака</strong> – присутствие металлического скрежета при работе СМА</li>
-                        <li><strong>Сливная помпа</strong> – не происходит слив воды</li>
-                        <li><strong>Термостат</strong> – при стирке не вода остаётся холодной</li>
-                    </ul>
-                    <p>Наш частный мастер – это оптимальное решение для обеспечения надлежащего ремонта машинки.<strong> Самым удобным считается ремонт стиралок АЕГ с выездом на дом, что избавляет от лишней волокиты с сервис-центром.</strong></p>
+                    <p><?php the_content(); ?></p>
                 </div>
                 <!-- .entry-content -->
             </article>
             <!-- #post-## -->
         </div>
         <section class="error_codes">
-            <h3>Коды ошибок стиральных машин AEG</h3>
+            <h3>Коды ошибок стиральных машин <?php the_title(); ?></h3>
             <ul>
-                <li><strong>«</strong><strong>Е00</strong><strong>»</strong><strong> — </strong>Отсутствует Ошибка</li>
-                <li><strong>«Е11</strong><strong>»</strong><strong> — </strong>Отсутствует залив воды в барабан во время цикла стирки. (время, отведенное на залив воды, истекло, а нужное количество воды не поступило)</li>
-                <li><strong>«Е12» — </strong>Неисправность системы слива воды (откачка воды длится более 1,5 минуты) Затруднен залив воды в стиральную машинку во время режима сушки</li>
-                <li><strong>«Е13» —</strong> Утечка воды из стиральной машинки</li>
-                <li><strong>«</strong><strong>Е21</strong><strong>»</strong><strong> — </strong>Затруднен слив воды в стиральной машине (в течение 10 минут вода не была слита из бака)</li>
-                <li><strong>«Е22</strong><strong>»</strong><strong> — </strong>Затруднен слив воды в стиральной машине (насос не откачивает воду на цикле сушка)</li>
-                <li><strong>«Е23» — </strong>Имеет место неисправность симистора водооткачивающего насоса.</li>
-                <li><strong>«Е24» — </strong>Возникла неисправность схемы считывания
-                    <br> симистора водооткачивающего насоса (имеет место неверное напряжение на входе микропроцессора)</li>
-                <li><strong>«Е31» — </strong>Возникла неисправность схемы электронного прессостата (частота его сигнала выходит за границы допустимого диапазона)</li>
-                <li><strong>«Е32» — </strong>Имеет место ошибка калибровки электронного прессостата&nbsp; (в ходе слива электронный прессостат выдает сигнал с нестабильной частотой)</li>
-                <li><strong>«Е33» — </strong>Возникла несогласованность работы датчиков уровня воды (датчика защиты ТЭНа от включения последнего без воды и датчика первого уровня)</li>
-                <li><strong>«</strong><strong>Е34</strong><strong>»</strong><strong> — </strong>Имеет место несоответствие между прессостатом и уровнем антикипения (ошибка существует более 60 секунд)</li>
-                <li><strong>«Е35</strong><strong>»</strong><strong> — </strong>Возник перелив воды в баке стиральной машинки.</li>
-                <li><strong>«Е36» — </strong>Неисправность датчика уровня защиты ТЭНа (АВ S)</li>
-                <li><strong>«Е37» — </strong>Неисправен датчик первого уровня воды (L1 S)</li>
-                <li><strong>«</strong><strong>Е38</strong><strong>»</strong><strong> — </strong>Закупорка приёмника давления в прессостате (уровень воды в баке не изменяется при вращении барабана СМА по меньшей мере 30 сек.)</li>
-                <li><strong>«Е39</strong><strong>»</strong><strong> — </strong>Неисправный датчик уровня перелива воды в баке (HV1 S)</li>
-                <li><strong>«Е41» — </strong>Дверь люка дверцы не закрыта</li>
-                <li><strong>«Е42» —</strong> Проблема в закрывании двери</li>
-                <li><strong>«</strong><strong>Е43</strong><strong>»</strong><strong> — </strong>Неисправность симистора питания задерживающего устройства дверцы люка</li>
-                <li><strong>«Е44</strong><strong>»</strong><strong> — </strong>Нарушение процесса считывания блокировки двери СМА</li>
-                <li><strong>«Е45» — </strong>Нарушение процесса считывания блокировки двери (напряжение на входе микропроцессора не соответствует исходным данным)</li>
-                <li><strong>«Е51» — </strong>Неисправность цепи управления приводным мотором</li>
-                <li><strong>«Е52» — </strong>Имеет место отсутствие сигнала тахогенератора двигателя СМА (сигнал не поступает на контроллер)</li>
-                <li><strong>«Е53» — </strong>Неисправность цепи управления симистора приводного мотора</li>
-                <li><strong>«Е54» — </strong>Неисправность контактных групп реле реверса приводного мотора</li>
-                <li><strong>«</strong><strong>Е55</strong><strong>»</strong><strong> — </strong>Неисправность цепи двигателя</li>
-                <li><strong>«Е56</strong><strong>»</strong><strong> — </strong>Нет сигнала с тахометрического генератора (сигнал не поступает в течение 15 минут)</li>
-                <li><strong>«Е57» — </strong>Запрошенный с инвертора ток имеет показания больше 15A</li>
-                <li><strong>«Е58» — </strong>Запрошенный с инвертора ток имеет показания больше 4,5A, но меньше 15A</li>
-                <li><strong>«Е59</strong><strong>»</strong><strong> — </strong>Тахометрический сигнал отсутствует в течение трёх секунд</li>
-                <li><strong>«Е61» — </strong>Вода не нагревается до нужной температуры. Нагрев идет медленно</li>
-                <li><strong>«Е62» — </strong>Имеет место перегрев воды (при этом температура нагрева
-                    <br> превышает 88°C за время, большее, чем 5 мин.)</li>
-                <li><strong>«</strong><strong>Е66</strong><strong>»</strong><strong> — </strong>Неисправно реле питания резистора на плате управления ТЭНа (имеет место несоответствие между считыванием и статусом реле)</li>
-                <li><strong>«Е68</strong><strong>»</strong><strong> — </strong>Имеется утечка тока через ТЭН на землю (значение напряжения сети отличается от
-                    <br> магистрального напряжения)</li>
-                <li><strong>«Е69» — </strong>Резистор находится в нерабочем состоянии</li>
-                <li><strong>«Е71» —</strong> Неисправность зонда NTC для стирки (имеется короткое замыкание внутри корпуса или самопроизвольное размыкание контактов устройства)</li>
-                <li><strong>«</strong><strong>Е72</strong><strong>»</strong><strong> — </strong>Зонд NTC конденсатора сушки неисправен (значение напряжения данного устройства выходит за пределы значений при размыкании контактов)</li>
-                <li><strong>«Е73</strong><strong>»</strong><strong> — </strong>Зонд NTC трубопровода сушки вышел из строя (величина
-                    <br> напряжения в нем выходит за пределы нормальных значений)</li>
-                <li><strong>«Е74» — </strong>В работе зонда NTC для стирки появились нарушения</li>
-                <li><strong>«Е82» — </strong>Неверное положение ручки переключателя при запуске и перезапуске</li>
-                <li><strong>«Е83» — </strong>Возникла ошибка считывания переключателя</li>
-                <li><strong>«Е91» — </strong>Произошла ошибка обмена данными между основной электронной платой и платой визуализации.</li>
-                <li><strong>«Е92» — </strong>Имеет место несоответствие обмена данными между основной электронной
-                    <br> платой и платой визуализации (несовместимые версии)</li>
-                <li><strong>«</strong><strong>Е93</strong><strong>»</strong><strong> — </strong>Возникла ошибка в конфигурации оборудования</li>
-                <li><strong>«Е94</strong><strong>»</strong><strong> — </strong>Появилась ошибка конфигурации цикла стирки</li>
-                <li><strong>«Е95» — </strong>Имеет место ошибка обмена данными между микропроцессором и ЭСППЗУ
-                    <br> (EEPROM)
-                </li>
-                <li><strong>«Е96» — </strong>Ошибка в конфигурации при подключении контроллера к внешним элементам</li>
-                <li><strong>«Е97» — </strong>Возникло несоответствие между выставленным режимом работы и конфигурацией цикла</li>
-                <li><strong>«</strong><strong>Е98</strong><strong>»</strong><strong> — </strong>Появилась ошибка обмена данными между платой управления двигателем (основной электроникой)</li>
-                <li><strong>«Е99</strong><strong>»</strong><strong> — </strong>Неправильное подсоединение входной/выходной электроники к звуковому блоку</li>
-                <li><strong>«Е3</strong><strong>A</strong><strong>» — </strong>Появилась ошибка в работе реле резистора (неправильно считывает реле нагревательного элемента)</li>
-                <li><strong>«Е5</strong><strong>A</strong><strong>» —</strong> Имеет место повышенная температура радиатора
-                    <br> охлаждения инвертора (цикл заблокирован при закрытой двери)</li>
-                <li><strong>«</strong><strong>Е5</strong><strong>B</strong><strong>»</strong><strong> — </strong>Напряжение на входе инвертора упало ниже 175 В</li>
-                <li><strong>«Е5</strong><strong>C</strong><strong>»</strong><strong> — </strong>Слишком высокое напряжение на входе платы инвертора (больше 430 В)</li>
-                <li><strong>«Е5</strong><strong>D</strong><strong>» — </strong>Возникла ошибка обмена данными между инвертором и основной платой (FCV не может принять и/или послать сообщение в течение 2 с)</li>
-                <li><strong>«Е5</strong><strong>E</strong><strong>» — </strong>Возникла ошибка обмена данными между основной платой и инвертором</li>
-                <li><strong>«Е5</strong><strong>F</strong><strong>» — </strong>Двигатель не запускается с платы инвертора (плата управления FCV непрерывно запрашивает параметры конфигурации)</li>
-                <li><strong>«Е9</strong><strong>A</strong><strong>» — </strong>Проблемы в программном обеспечении между динамиком и входной/выходной электроникой</li>
-                <li><strong>«Е9</strong><strong>B</strong><strong>» — </strong>Возникла ошибка обмена данными между микропроцессором и флэш-памятью платы</li>
-                <li><strong>«</strong><strong>Е9</strong><strong>D</strong><strong>»</strong><strong> — </strong>Появилась неисправность в работе внутренних часов СМА</li>
-                <li><strong>«Е9</strong><strong>F</strong><strong>»</strong><strong> — </strong>Произошла ошибка обмена данными между основной платой и платой инвертора СМА</li>
-                <li><strong>«Е</strong><strong>A</strong><strong>1» — </strong>Имеет место неправильное позиционирование барабана (DSP)</li>
-                <li><strong>«Е</strong><strong>A</strong><strong>2» — </strong>Ошибка опознавания в системе DSP</li>
-                <li><strong>«</strong><strong>Е</strong><strong>A3</strong><strong>»</strong><strong> — </strong>DSP не фиксирует шкив двигателя</li>
-                <li><strong>«</strong><strong>Е</strong><strong>A4</strong><strong>»</strong><strong> — </strong>Имеет место неисправность DSP</li>
-                <li><strong>«Е</strong><strong>A5</strong><strong>»</strong><strong> — </strong>Неисправный тиристор DSP</li>
-                <li><strong>«Е</strong><strong>A</strong><strong>6» — </strong>Неисправность DSP открывания двери</li>
-                <li><strong>«Е</strong><strong>B</strong><strong>1» —</strong> Несоответствие частоты питающей сети допустимым значениям</li>
-                <li><strong>«</strong><strong>C0</strong><strong>»</strong><strong> — </strong>Ошибка в системе залива воды</li>
-                <li><strong>«</strong><strong>C1</strong><strong>»</strong><strong> — </strong>Не проходит залив воды</li>
-                <li><strong>«C2» — </strong>Не происходит блокировка люка</li>
-                <li><strong>«</strong><strong>C</strong><strong>3» — </strong>Ошибка в системе откачки воды</li>
-                <li><strong>«</strong><strong>C</strong><strong>4» — </strong>Проблемы с откачкой воды (слив идет медленно)</li>
-                <li><strong>«</strong><strong>C</strong><strong>5» — </strong>Имеет место перегрев датчика главного двигателя</li>
-                <li><strong>«</strong><strong>C</strong><strong>6» — </strong>Проблемы в системе закачки воды (вода не наполняет бак до нужного уровня).</li>
-                <li><strong>«</strong><strong>C7</strong><strong>»</strong><strong> — </strong>Не идет нагрев воды до нужной температуры</li>
-                <li><strong>«</strong><strong>C</strong><strong>8» — </strong>Не идет нагрев воды до нужной температуры</li>
-                <li><strong>«</strong><strong>C</strong><strong>9» — </strong>Двигатель не развивает нужных оборотов вращения</li>
-                <li><strong>«</strong><strong>CF</strong><strong>» — </strong>Система не получает сигнал на начало работы</li>
-                <li><strong>«</strong><strong>CD</strong><strong>»</strong><strong> — </strong>Система не получает сигнал на начало работы (не закрыта дверца люка)</li>
+            <?php if( have_rows('eroor_code') ):
+    while ( have_rows('eroor_code') ) : the_row(); ?>
+                <li><strong><?php the_sub_field('number'); ?></strong>
+                <?php the_sub_field('desc'); ?></li>
+              <?php endwhile; else :
+                // no rows found
+                 endif; ?>
             </ul>
             <p>&nbsp;</p>
         </section>
@@ -419,7 +307,7 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="guarantee-img">
-                                <img class="img-responsive" src="./Ремонт стиральных машин_files/guarantee-img.jpg" alt="">
+                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/guarantee-img.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-lg-8">
@@ -455,23 +343,6 @@
                                 <br><strong>Марка:</strong> Электролюкс </div>
                         </div>
                     </div>
-                    <script>
-                    jQuery(document).ready(function() {
-                        var ap35 = new APlayer({
-                            element: document.getElementById('player35'),
-                            narrow: false,
-                            autoplay: false,
-                            showlrc: false,
-                            theme: '#e6d0b2',
-                            music: {
-                                title: 'Мастер отлично справился',
-                                author: 'Владимир Петухов',
-                                url: 'http://rem-service.by/wp-content/uploads/2016/02/vladimir-electrolux.mp3'
-                            }
-                        });
-                        ap35.init();
-                    });
-                    </script>
                     <div class="wrap container-fluid">
                         <div class="client-block-content">
                             <span class="client-title">“Татьяна Вершаль: У мастера была сменная обувь и он убрал весь мусор”</span>
@@ -482,23 +353,6 @@
                                 <br><strong>Марка:</strong> LG </div>
                         </div>
                     </div>
-                    <script>
-                    jQuery(document).ready(function() {
-                        var ap31 = new APlayer({
-                            element: document.getElementById('player31'),
-                            narrow: false,
-                            autoplay: false,
-                            showlrc: false,
-                            theme: '#e6d0b2',
-                            music: {
-                                title: 'ремонт',
-                                author: 'Татьяна Вершаль',
-                                url: 'http://rem-service.by/wp-content/uploads/2016/02/tatjana-lg.mp3'
-                            }
-                        });
-                        ap31.init();
-                    });
-                    </script>
                 </div>
             </section>
         </noindex>
@@ -558,39 +412,14 @@
         <!-- Выводим другие бренды -->
         <h2 class="h2-style">Другие бренды, которые мы ремонтируем</h2>
         <div class="brandlist">
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-aeg/"><img width="124" height="88" src="./Ремонт стиральных машин_files/aeg.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="aeg" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-ardo/"><img width="124" height="88" src="./Ремонт стиральных машин_files/ardo.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="ardo" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-ariston/"><img width="124" height="88" src="./Ремонт стиральных машин_files/aris.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="aris" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-asko/"><img width="123" height="88" src="./Ремонт стиральных машин_files/asko.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="asko" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-bauknecht/"><img width="123" height="88" src="./Ремонт стиральных машин_files/baukneht.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="baukneht" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-beko/"><img width="123" height="88" src="./Ремонт стиральных машин_files/beko.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="beko" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-bosch/"><img width="124" height="88" src="./Ремонт стиральных машин_files/bosche.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="bosche" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-brandt/"><img width="124" height="88" src="./Ремонт стиральных машин_files/brend.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="brend" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-candy/"><img width="124" height="88" src="./Ремонт стиральных машин_files/candy.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="candy" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-daewoo/"><img width="124" height="88" src="./Ремонт стиральных машин_files/deo.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="deo" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-electrolux/"><img width="124" height="88" src="./Ремонт стиральных машин_files/elec.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="elec" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-euronova/"><img width="124" height="88" src="./Ремонт стиральных машин_files/evronova.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="evronova" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-general-electric/"><img width="123" height="88" src="./Ремонт стиральных машин_files/GE.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="GE" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-gorenje/"><img width="123" height="88" src="./Ремонт стиральных машин_files/gorenje.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="gorenje" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-hansa/"><img width="123" height="88" src="./Ремонт стиральных машин_files/hansa.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="hansa" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-indesit/"><img width="124" height="88" src="./Ремонт стиральных машин_files/indezit.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="indezit" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-kaiser/"><img width="124" height="88" src="./Ремонт стиральных машин_files/kayzer.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="kayzer" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-lg/"><img width="124" height="88" src="./Ремонт стиральных машин_files/lg.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="lg" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-miele/"><img width="124" height="89" src="./Ремонт стиральных машин_files/mielj.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="mielj" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-otsein/"><img width="124" height="89" src="./Ремонт стиральных машин_files/oytsen.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="oytsen" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-philco/"><img width="124" height="89" src="./Ремонт стиральных машин_files/philko.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="philko" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-privileg/"><img width="123" height="89" src="./Ремонт стиральных машин_files/priv.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="priv" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-rosieres/"><img width="123" height="89" src="./Ремонт стиральных машин_files/ros.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="ros" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-samsung/"><img width="123" height="89" src="./Ремонт стиральных машин_files/samsung.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="samsung" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-siemens/"><img width="124" height="89" src="./Ремонт стиральных машин_files/simens.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="simens" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-thomson/"><img width="124" height="89" src="./Ремонт стиральных машин_files/tompson.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="tompson" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-whirlpool/"><img width="124" height="89" src="./Ремонт стиральных машин_files/wir.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="wir" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-zanussi/"><img width="124" height="89" src="./Ремонт стиральных машин_files/zan.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="zan" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
-            <a href="http://rem-service.by/remont-stiralnyh-mashin-atlant/"><img width="124" height="88" src="./Ремонт стиральных машин_files/atlant.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="atlant" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px"></a>
+        <?php query_posts("order=ASC&showposts=50&cat=12"); ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail( 'style=width=124;height:88;'); ?>
+
+            </a>
+            <?php endwhile; endif; ?>
+                                <?php wp_reset_query(); ?>
         </div>
-        <!-- ------------------------------------------------------------------ -->
-        <!-- ------------------------------------------------------------------ -->
-        <!-- ------------------------------------------------------------------ -->
-        <!-- ------------------------------------------------------------------ -->
     </div>
     <?php get_footer(); ?>
