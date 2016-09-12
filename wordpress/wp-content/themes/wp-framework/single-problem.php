@@ -3,7 +3,7 @@
 
   <div class="services-block wrap container-fluid wrap_breadcrumbs">
     <div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-    <a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a></span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://rem-service.by/category/remont-stiralnyx-mashin/" itemprop="url"><span itemprop="title">Ремонт стиральных машин в Минске на дому</span></a></span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://rem-service.by/category/remont-stiralnyx-mashin/problemy-so-stiralnymi-mashinami/" itemprop="url"><span itemprop="title">Проблемы со стиральными машинами</span></a></span> <span class="sep">›</span> <span class="current">Бесконечно стирает</span></div><!-- .breadcrumbs -->  </div>
+    <a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a></span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://rem-service.by/category/remont-stiralnyx-mashin/" itemprop="url"><span itemprop="title">Ремонт стиральных машин в Минске на дому</span></a></span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://rem-service.by/category/remont-stiralnyx-mashin/problemy-so-stiralnymi-mashinami/" itemprop="url"><span itemprop="title">Проблемы со стиральными машинами</span></a></span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div><!-- .breadcrumbs -->  </div>
 
 
   <h2 class="h2-style">Цены на ремонт (запчасти включены)</h2>

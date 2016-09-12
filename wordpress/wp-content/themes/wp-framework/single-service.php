@@ -10,7 +10,7 @@
             </span>
             <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://rem-service.by/category/remont-stiralnyx-mashin/" itemprop="url"><span itemprop="title">Ремонт стиральных машин в Минске на дому</span></a>
                 </span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://rem-service.by/category/remont-stiralnyx-mashin/uzly-stiralnyx-mashin/" itemprop="url"><span itemprop="title">Узлы стиральных машин</span></a>
-                </span> <span class="sep">›</span> <span class="current">Диагностика</span></div>
+                </span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div>
             <!-- .breadcrumbs -->
         </div>
         <h2 class="h2-style-price">Цена услуги (с запчастями): <?php the_field('price'); ?> рублей.</h2>
