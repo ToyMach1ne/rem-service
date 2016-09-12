@@ -302,57 +302,51 @@
         <!-- Гарантии -->
         <section class="guarantee guarantee-index">
             <div class="wrap container-fluid">
-                <div class="guarantee-block">
-                    <h2 class="h2-style">Гарантийная и постгарантийная поддержка</h2>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="guarantee-img">
-                                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/guarantee-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <p>
-                                Мастер в обязательном порядке выписывает квитанцию, в которой указывает ваши данные, марку и модель стиральной машины, выполненные работы и гарантийный срок на них. По этой квитанции вы можете обратиться за гарантийным ремонтом в любое время. Срок гарантии на выполненные работы - до 12 месяцев.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <?php if( have_rows('support_mark') ):
+    while ( have_rows('support_mark') ) : the_row();
+    // vars
+    $image = get_sub_field('image');?>
+      <div class="guarantee-block">
+        <h2 class="h2-style"><?php the_sub_field('title'); ?></h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="guarantee-img">
+               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
             </div>
+          </div>
+          <div class="col-lg-8">
+            <p>
+              <?php the_sub_field('text'); ?>
+            </p>
+          </div>
+        </div>
+      </div>
+      <?php endwhile; else :
+                // no rows found
+                 endif; ?>
+    </div>
         </section>
         <noindex>
             <section class="clients">
                 <h2 class="h2-style">Отзывы наших клиентов</h2>
                 <div class="wrap-clients">
                     <div class="wrap container-fluid">
+                                    <?php if( have_rows('comment') ):
+    while ( have_rows('comment') ) : the_row(); ?>
                         <div class="client-block-content">
-                            <span class="client-title">“Инна: Очень приятно видеть профессионалов!”</span>
-                            <p>26.04.2016 мы вызвали мастера по ремонту машины (их у нас 2: Атлант и Bosch). Он приехал очень оперативно, хоть и не так как обещали, но позвонил и предупредил. Работу выполнил быстро и аккуратно — причину поломок устранил! Очень приятно видеть таких людей-профессионалов! Спасибо!</p>
+                            <span class="client-title"><?php the_sub_field('name_title'); ?></span>
+                            <p><?php the_sub_field('content'); ?></p>
                             <div id="player4023" class="aplayer"></div>
                             <div class="info-name">
-                                <strong>Выполненная работа: </strong>ремонт
-                                <br><strong>Марка:</strong> Атлант, Bosch </div>
+                                <strong>Выполненная работа: </strong><?php the_sub_field('job_done'); ?>
+                                <br><strong>Марка:</strong> <?php the_sub_field('brand'); ?></div>
                         </div>
+                        <?php endwhile; else :
+                // no rows found
+                 endif; ?>
                     </div>
-                    <div class="wrap container-fluid">
-                        <div class="client-block-content">
-                            <span class="client-title">“Владимир Петухов: Мастер отлично справился со сложной работой”</span>
-                            <p>Я, Владимир, обращался в фирму ремсервис по поводу ремонта стиральной машины Электролюкс. Неисправность заключалась в том, что не работал подшипник и требовалась его замена. Это довольно сложная операция, поэтому я подошел к поиску мастера достаточно серьезно и нашел такого мастера в фирме ремсервис. Им была выполнена работа достаточно квалифицированно. И я доволен тем, что обратился в фирму ремсервис по поводу данной услуги</p>
-                            <div id="player35" class="aplayer"></div>
-                            <div class="info-name">
-                                <strong>Выполненная работа: </strong>ремонт
-                                <br><strong>Марка:</strong> Электролюкс </div>
-                        </div>
-                    </div>
-                    <div class="wrap container-fluid">
-                        <div class="client-block-content">
-                            <span class="client-title">“Татьяна Вершаль: У мастера была сменная обувь и он убрал весь мусор”</span>
-                            <p>Здравствуйте, меня зовут Татьяна. Две недели назад мы вызывали мастера по ремонту стиральной машины с организации ремсервис. Очень довольны работой мастера, ремонтом стиральной машины. Мастер приехал в удобное для нас время, которое было заранее оговорено, при себе имел сменную обувь, а также за собой убрал весь мусор после ремонта. Объяснил некоторые тонкости по стиральной машинке и по выбору стирального порошка. Работу выполнил быстро и качественно. Работой остались очень довольны, за что огромное спасибо.</p>
-                            <div id="player31" class="aplayer"></div>
-                            <div class="info-name">
-                                <strong>Выполненная работа: </strong>ремонт
-                                <br><strong>Марка:</strong> LG </div>
-                        </div>
-                    </div>
+
+
                 </div>
             </section>
         </noindex>
