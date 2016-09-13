@@ -184,7 +184,7 @@
             </div>
         </section>
         <section class="instr-ekspl">
-            <h3>Инструкции по эксплуатации стиральных машин AEG</h3>
+            <h3>Инструкции по эксплуатации стиральных машин <?php the_title(); ?></h3>
             <ul>
                 <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMA_45000.pdf" target="_blank">ÖKO-LAVAMA 45000</a></li>
                 <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT__LAVALOGIC_1400_update.pdf" target="_blank" rel="">ÖKO-LAVAMAT LAVALOGIC 1400 update</a></li>

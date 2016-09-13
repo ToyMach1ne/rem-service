@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
     <div class="wrap container-fluid">
         <div class="services-block wrap container-fluid wrap_breadcrumbs">
             <div class="breadcrumbs">
@@ -13,7 +12,7 @@
                 </span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div>
             <!-- .breadcrumbs -->
         </div>
-        <h2 class="h2-style-price">Цена услуги (с запчастями): <?php the_field('price'); ?> рублей.</h2>
+        <h2 class="h2-style-price">Цена услуги (с запчастями): <?php the_field('price'); ?> тыс. рублей.</h2>
         <div class="text-content">
             <!-- <div class="services-block wrap container-fluid wrap_breadcrumbs">
   </div> -->

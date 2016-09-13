@@ -20,7 +20,7 @@
                                     <td style="height: 24px;">
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                       </td>
-                                    <td style="height: 24px;"><?php the_field('price'); ?></td>
+                                    <td style="height: 24px;">от <?php the_field('price'); ?></td>
                                 </tr>
                                <?php endwhile; endif; ?>
                                 <?php wp_reset_query(); ?>
