@@ -86,8 +86,8 @@
             </section>
             <section class="guarantee guarantee-index">
                 <div class="wrap container-fluid">
-    <?php if( have_rows('support_mark') ):
-    while ( have_rows('support_mark') ) : the_row();
+    <?php if( have_rows('support_mark' , '36') ):
+    while ( have_rows('support_mark' , '36') ) : the_row();
     // vars
     $image = get_sub_field('image');?>
       <div class="guarantee-block">
@@ -113,8 +113,8 @@
             <section class="clients">
                 <h2 class="h2-style">Отзывы наших клиентов</h2>
                 <div class="wrap-clients">
-                <?php if( have_rows('comment') ):
-    while ( have_rows('comment') ) : the_row(); ?>
+                <?php if( have_rows('comment', '36') ):
+    while ( have_rows('comment', '36') ) : the_row(); ?>
                     <div class="wrap container-fluid">
                         <div class="client-block-content">
                             <span class="client-title"><?php the_sub_field('name_title'); ?></span>

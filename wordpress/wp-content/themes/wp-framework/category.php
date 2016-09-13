@@ -23,9 +23,6 @@
                     </div>
                       <?php endwhile; endif; ?>
                        <?php wp_reset_query(); ?>
-                    <div class="wp-pagenavi">
-                        <span class="pages">Страница 1 из 2</span><span class="current">1</span><a class="page larger" href="http://rem-service.by/category/poleznye-sovety/page/2/">2</a><a class="nextpostslink" rel="next" href="http://rem-service.by/category/poleznye-sovety/page/2/">»</a>
-                    </div>
                 </div>
             </div>
         </div>

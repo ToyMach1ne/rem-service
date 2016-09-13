@@ -88,13 +88,6 @@
     </div>
   </section>  <div class="text-content">
 
-
-
-<!-- <div class="services-block wrap container-fluid wrap_breadcrumbs">
-  </div> -->
-
-
-
 <article id="post-58" class="post-58 post type-post status-publish format-standard hentry category-problemy-so-stiralnymi-mashinami">
   <header class="entry-header">
   <h1 class="entry-title">
@@ -176,8 +169,8 @@
   </section>
   <section class="guarantee guarantee-index">
     <div class="wrap container-fluid">
-    <?php if( have_rows('support_mark') ):
-    while ( have_rows('support_mark') ) : the_row();
+    <?php if( have_rows('support_mark' , '36') ):
+    while ( have_rows('support_mark' , '36') ) : the_row();
     // vars
     $image = get_sub_field('image');?>
       <div class="guarantee-block">
@@ -204,8 +197,8 @@
   <section class="clients">
     <h2 class="h2-style">Отзывы наших клиентов</h2>
     <div class="wrap-clients">
-                <?php if( have_rows('comment') ):
-    while ( have_rows('comment') ) : the_row(); ?>
+                <?php if( have_rows('comment', '36') ):
+    while ( have_rows('comment', '36') ) : the_row(); ?>
                     <div class="wrap container-fluid">
                         <div class="client-block-content">
                             <span class="client-title"><?php the_sub_field('name_title'); ?></span>
