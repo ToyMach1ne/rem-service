@@ -100,14 +100,6 @@
 
 
   <div class="entry-content">
-    <p>Ваша стиральная машина стирает очень долго? Вот основные причины!</p>
-<ul>
-<li><a href="http://rem-service.by/stiralnaya-mashina-beskonechno-stiraet/#voda">Проблемы с подачей воды</a></li>
-<li><a href="http://rem-service.by/stiralnaya-mashina-beskonechno-stiraet/#sliv">Проблемы со сливом воды</a></li>
-<li><a href="http://rem-service.by/stiralnaya-mashina-beskonechno-stiraet/#uhodit">Вода постоянно поступает и уходит</a></li>
-<li><a href="http://rem-service.by/stiralnaya-mashina-beskonechno-stiraet/#nagrev">Проблемы с нагревом воды</a></li>
-<li><a href="http://rem-service.by/stiralnaya-mashina-beskonechno-stiraet/#dolgo">Стиральная машина долго крутит барабан или зависает</a></li>
-</ul>
 <p><?php the_content(); ?></p>
   </div><!-- .entry-content -->
 
