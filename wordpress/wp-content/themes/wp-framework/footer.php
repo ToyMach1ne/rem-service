@@ -25,7 +25,7 @@
                         <span class="txt-logo-int"><?php the_field('second_text'); ?></span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-lg-rs-in">
+                <div class="col-lg-3 col-lg-rs-in button-call">
                     <div class="wrap-button">
                         <button class="main-modal-submit" data-form="form-1">ЗАКАЗАТЬ ЗВОНОК</button>
                     </div>
@@ -35,7 +35,6 @@
                         <span><?php the_field('first_telephone'); ?></span>
                         <span><?php the_field('second_telephone'); ?></span>
                         <div class="mode"><?php the_field('work_time'); ?></div>
-                        <div class="copyr">Сайт сделан в <a href="http://wsp-design.by/?utm_source=sites&amp;utm_medium=free&amp;utm_campaign=remservice" target="_blank" rel="nofollow">WSP-Design</a></div>
                     </div>
                 </div>
             </div>
@@ -48,7 +47,7 @@
                 <button class="main-modal-submit" data-form="form-3">Быстрый вызов мастера</button>
             </div>
             <div class="col-lg-6 col-sm-12 cent">Звоните ежедневно с 9 до 21: <strong>+375 (29) 105-28-09, +375 (33) 684-68-44</strong></div>
-            <div class="col-lg-2 col-sm-12 cent"><a href="http://rem-service.by/#top">ВВЕРХ ↑</a></div>
+            <div class="col-lg-2 col-sm-12 cent"><a href="<?php the_permalink(); ?>/#top">ВВЕРХ ↑</a></div>
         </div>
     </div>
     <!--Модальное окно-->
@@ -126,35 +125,9 @@
     <noscript>
         &lt;div style="display:inline;"&gt; &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/935982083/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt; &lt;/div&gt;
     </noscript>
-    <!-- BEGIN JIVOSITE CODE {literal} -->
-    <script type="text/javascript">
-    (function() {
-        var widget_id = 'u26lKknRq1';
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = '//code.jivosite.com/script/widget/' + widget_id;
-        var ss = document.getElementsByTagName('script')[0];
-        ss.parentNode.insertBefore(s, ss);
-    })();
-    </script>
-    <!-- {/literal} END JIVOSITE CODE -->
+
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wp-embed.min.js"></script>
 
-    <div class="jivo-iframe-container-right jivo-state-widget jivo-collapsed jivo_shadow jivo_rounded_corners jivo_gradient" id="jivo-iframe-container" style="visibility: visible; width: 38px; margin-bottom: -134.5px; padding-top: 0px; height: 269px; margin-right: 0px; left: auto; right: 0px; bottom: 50%; background-color: transparent !important;">
-        <div id="jivo-action-container">
-            <div dir="ltr" id="jivo_action" style="display: none; height: 70px;" classname="jivo-desktop">
-                <div id="jivo_close_button">
-                    <svg id="jivo-icon-closewidget" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-
-                        <circle class="jivo-st0" cx="12" cy="12" r="11"></circle>
-                        <path class="jivo-st1" d="M7.5 16.5l9-9M16.5 16.5l-9-9"></path>
-                    </svg>
-                </div>
-            </div>
-            <div id="jivo-drag-handle" style="display: none; height: 70px; cursor: move;"></div>
-        </div>
-    </div>
     <div id="jivo-mouse-tracker" style="display: none;"></div>
     <?php wp_footer(); ?>
 
