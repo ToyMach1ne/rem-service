@@ -101,20 +101,10 @@
     </div>
   </div>
 
-  <script>
-  jQuery('button.main-modal-submit').click(function() {
-      var data_header = jQuery(this).data('header');
-      jQuery('.form-wrapper-main-modal .modal-zag3').text(data_header);
-  });
-  </script>
+  <?php wp_footer(); ?>
   <script src="<?php echo get_template_directory_uri(); ?>/js/old-ie.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/main-modal.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/main-script.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/APlayer.min.js"></script>
 
-  <?php wp_footer(); ?>
 </body>
 </html>
 
