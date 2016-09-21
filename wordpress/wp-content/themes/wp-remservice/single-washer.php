@@ -1,54 +1,52 @@
 <?php get_header(); ?>
-    <div class="wrap container-fluid">
-        <div class="services-block wrap container-fluid wrap_breadcrumbs">
-            <div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a>
-                </span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Ремонт стиральных машин в Минске на дому</span></a>
-                </span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Бренды стиральных машин</span></a>
-                </span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div>
-            <!-- .breadcrumbs -->
+  <div class="wrap container-fluid">
+    <div class="services-block wrap container-fluid wrap_breadcrumbs">
+      <div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo home_url(); ?>" itemprop="url">
+        <span itemprop="title">Главная</span></a></span><span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Ремонт стиральных машин в Минске на дому</span></a></span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Бренды стиральных машин</span></a></span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span>
+      </div>
+    </div>
+
+    <h2 class="h2-style">Цены на ремонт стиральных машин <?php the_title(); ?>  (запчасти включены)</h2>
+    <div class="wrap-table table-responsive">
+      <table width="100%">
+        <tbody>
+          <tr style="height: 24px;">
+            <th style="height: 24px;" width="60%">Вид услуги</th>
+            <th style="height: 24px;">Стоимость, руб. (BYN)</th>
+          </tr>
+
+          <?php query_posts("order=ASC&showposts=50&cat=9"); ?>
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <tr style="height: 24px;">
+              <td style="height: 24px;">
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </td>
+              <td style="height: 24px;"><?php the_field('price'); ?></td>
+            </tr>
+          <?php endwhile; endif; ?>
+          <?php wp_reset_query(); ?>
+        </tbody>
+      </table>
+      <p>&nbsp;</p>
+      <span class="description-tb">*Итоговая стоимость ремонта зависит от трудоемкости работ и стоимости запасных частей.</span>
+    </div>
+
+    <div class="problem-list">
+      <h2 class="h2-style">Проблемы, которые мы устраняем</h2>
+      <div class="row">
+        <div class="list-li">
+          <ul>
+            <?php query_posts("order=ASC&showposts=50&cat=11"); ?>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+              <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+            <?php endwhile; endif; ?>
+            <?php wp_reset_query(); ?>
+          </ul>
         </div>
-        <!-- ------------------------------------------------------------------ -->
-        <h2 class="h2-style">Цены на ремонт стиральных машин <?php the_title(); ?>  (запчасти включены)</h2>
-        <div class="wrap-table table-responsive">
-            <table width="100%">
-                            <tbody>
-                                <tr style="height: 24px;">
-                                    <th style="height: 24px;" width="60%">Вид услуги</th>
-                                    <th style="height: 24px;">Стоимость, руб. (BYN)</th>
-                                </tr>
-                                <?php query_posts("order=ASC&showposts=50&cat=9"); ?>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                                <tr style="height: 24px;">
-                                    <td style="height: 24px;">
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                      </td>
-                                    <td style="height: 24px;"><?php the_field('price'); ?></td>
-                                </tr>
-                               <?php endwhile; endif; ?>
-                                <?php wp_reset_query(); ?>
-                            </tbody>
-                        </table>
-            <p>&nbsp;</p>
-            <span class="description-tb">
-      *Итоговая стоимость ремонта зависит от трудоемкости работ и стоимости запасных частей.
-    </span>
-        </div>
-        <div class="problem-list">
-            <h2 class="h2-style">Проблемы, которые мы устраняем</h2>
-            <div class="row">
-                <div class="list-li">
-                    <ul>
-                    <?php query_posts("order=ASC&showposts=50&cat=11"); ?>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                        <?php endwhile; endif; ?>
-                                <?php wp_reset_query(); ?>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--list-info-->
-        <section class="block-form wrap container-fluid">
+      </div>
+    </div>
+
+    <section class="block-form wrap container-fluid">
             <div class="wrap-form wrap-form-int">
                 <div class="wrapper-form-int">
                     <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
@@ -102,8 +100,7 @@
             </div>
         </section>
         <div class="text-content">
-            <!-- <div class="services-block wrap container-fluid wrap_breadcrumbs">
-  </div> -->
+
             <article id="post-209" class="post-209 post type-post status-publish format-standard has-post-thumbnail hentry category-brendy-stiralnyx-mashin">
                 <header class="entry-header">
                     <h1 class="entry-title">
