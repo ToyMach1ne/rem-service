@@ -6,20 +6,21 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 
 .wp-pagenavi {
   clear: both;
-
-  a, span {
-    text-decoration: none;
-    border: 1px solid #BFBFBF;
-    padding: 3px 5px;
+  a,
+  span {
     margin: 2px;
-  }
+    padding: 3px 5px;
 
+    text-decoration: none;
+
+    border: 1px solid #bfbfbf;
+  }
   a:hover {
     border-color: #000;
   }
-
   span.current {
-    border-color: #000;
     font-weight: bold;
+
+    border-color: #000;
   }
 }
