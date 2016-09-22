@@ -3,7 +3,7 @@ define('DB_NAME', 'rem-service');
 define('DB_USER', 'rem-service');
 define('DB_PASSWORD', 'rem-service');
 
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'localhost');;
 
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');
