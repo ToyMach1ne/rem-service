@@ -58,11 +58,11 @@
     </div>
 
     <div class="block-forma wrap container-fluid">
-      <?php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+
         <div class="form-top-info">
           <h1 class="zag-h1"><?php the_field('site_slogan'); ?></h1>
-          <span class="span-zag"><?php the_field('under_slogan'); ?></span>
-          <span class="span-zag-in"><?php the_field('second_underslogan'); ?></span>
+          <span class="span-zag"><?php the_field('under_slogan', 53); ?></span>
+          <span class="span-zag-in"><?php the_field('second_underslogan', 53); ?></span>
         </div>
 
         <div class="wrap-form form-bg">
@@ -110,7 +110,7 @@
               </form>
             </div>
           </div>
-        <?php endwhile; endif; wp_reset_query(); ?>
+
       </div>
 
       <section class="block-info">
