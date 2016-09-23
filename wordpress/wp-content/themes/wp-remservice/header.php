@@ -58,59 +58,17 @@
     </div>
 
     <div class="block-forma wrap container-fluid">
-      <?php query_posts('page_id=53'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
         <div class="form-top-info">
           <h1 class="zag-h1"><?php the_field('site_slogan'); ?></h1>
-          <span class="span-zag"><?php the_field('under_slogan'); ?></span>
-          <span class="span-zag-in"><?php the_field('second_underslogan'); ?></span>
+          <span class="span-zag"><?php the_field('under_slogan', 53 ); ?></span>
+          <span class="span-zag-in"><?php the_field('second_underslogan' , 53 ); ?></span>
         </div>
-
         <div class="wrap-form form-bg">
           <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
             <div class="wrapper-form">
-              <form action="#" method="post">
-                <div class="wrap-input">
-                  <input type="text" placeholder="Ваше имя" name="firstname" required="">
-                  <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
-                  <select name="brand">
-                    <option value="no" selected="">Бренд стиральной машины</option>
-                    <option value="AEG">AEG</option>
-                    <option value="Ardo">Ardo</option>
-                    <option value="Ariston">Ariston</option>
-                    <option value="Asko">Asko</option>
-                    <option value="Bauknecht">Bauknecht</option>
-                    <option value="Beko">Beko</option>
-                    <option value="Bosch">Bosch</option>
-                    <option value="Brandt">Brandt</option>
-                    <option value="Candy">Candy</option>
-                    <option value="Daewoo">Daewoo</option>
-                    <option value="Electrolux">Electrolux</option>
-                    <option value="Euronova">Euronova</option>
-                    <option value="General Electric">General Electric</option>
-                    <option value="Gorenje">Gorenje</option>
-                    <option value="Hansa">Hansa</option>
-                    <option value="Indesit">Indesit</option>
-                    <option value="Kaiser">Kaiser</option>
-                    <option value="LG">LG</option>
-                    <option value="Miele">Miele</option>
-                    <option value="Otsein">Otsein</option>
-                    <option value="Philco">Philco</option>
-                    <option value="Privileg">Privileg</option>
-                    <option value="Rosieres">Rosieres</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Siemens">Siemens</option>
-                    <option value="Thomson">Thomson</option>
-                    <option value="Whirlpool">Whirlpool</option>
-                    <option value="Zanussi">Zanussi</option>
-                    <option value="Атлант">Атлант</option>
-                  </select>
-                </div>
-                <textarea name="comm" placeholder="Кратко опишите проблему. Например: не включается, течет и т.д."></textarea>
-                <input type="submit" value="Отправить заявку на ремонт">
-              </form>
+             <?php echo do_shortcode('[contact-form-7 id="542" title="Без названия"]'); ?>
             </div>
           </div>
-        <?php endwhile; endif; wp_reset_query(); ?>
       </div>
 
       <section class="block-info">
