@@ -3,7 +3,7 @@
 
     <div class="breadcrumbs">
       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-        <a href="http://rem-service.by/" itemprop="url"><span itemprop="title">Главная</span></a>
+        <a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a>
       </span>
       <span class="sep">›</span> <span class="current">Отзывы</span>
     </div>
