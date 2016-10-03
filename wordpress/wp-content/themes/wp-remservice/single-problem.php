@@ -1,11 +1,10 @@
 <?php get_header(); ?>
   <div class="wrap container-fluid">
 
-  <div class="services-block wrap container-fluid wrap_breadcrumbs">
-    <div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-    <a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a></span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Ремонт стиральных машин в Минске на дому</span></a></span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Проблемы со стиральными машинами</span></a></span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div><!-- .breadcrumbs -->  </div>
-
-
+<section class="services">
+      <div class="wrap comment-wrap container-fluid">
+        <div class="row for-sidebar">
+          <?php get_sidebar(); ?>
   <h2 class="h2-style">Цены на ремонт (запчасти включены)</h2>
   <div class="wrap-table table-responsive">
     <noindex>
@@ -35,6 +34,9 @@
       *Итоговая стоимость ремонта зависит от трудоемкости работ и стоимости запасных частей.
     </span>
   </div>
+  </div>
+  </div>
+  </section>
   <section class="block-form wrap container-fluid">
     <div class="wrap-form wrap-form-int">
       <div class="wrapper-form-int">
@@ -153,14 +155,13 @@
     <h2 class="h2-style">Ремонтируем также cтиральные машины других брендов</h2>
     <div class="brandlist">
         <?php query_posts("order=ASC&showposts=50&cat=12"); ?>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail( 'style=width=124;height:88;'); ?>
-
+            <?php the_post_thumbnail(); ?>
             </a>
             <?php endwhile; endif; ?>
-                                <?php wp_reset_query(); ?>
-        </div>
+            <?php wp_reset_query(); ?>
+    </div>
 
   <div class="problem-list">
     <h2 class="h2-style">Устраняем все поломки</h2>
@@ -172,13 +173,10 @@
                 <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                 <?php endwhile; endif; ?>
               <?php wp_reset_query(); ?>
-
-
         </ul>
       </div>
     </div>
   </div><!--list-info-->
-
 </div>
 <?php get_footer(); ?>
 

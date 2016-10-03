@@ -1,18 +1,12 @@
 <?php /* Template Name: Page Comments */ get_header(); ?>
-  <div class="services-block wrap container-fluid wrap_breadcrumbs">
-
-    <div class="breadcrumbs">
-      <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-        <a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a>
-      </span>
-      <span class="sep">›</span> <span class="current">Отзывы</span>
-    </div>
-
-  </div>
 
   <noindex>
-    <section class="wrap-clients wrap">
+
+    <section class="services">
       <div class="wrap comment-wrap container-fluid">
+        <div class="row for-sidebar">
+          <?php get_sidebar(); ?>
+        <div class="col-lg-9 border-right">
         <h2 class="h2-style"><span>Отзывы</span></h2>
         <?php if( have_rows('comment') ): while ( have_rows('comment') ) : the_row(); ?>
           <div class="wrap container-fluid">
@@ -27,6 +21,8 @@
             </div>
           </div>
         <?php endwhile; endif; ?>
+        </div>
+       </div>
       </div>
     </section>
   </noindex>

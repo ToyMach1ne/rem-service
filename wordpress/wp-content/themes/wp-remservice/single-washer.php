@@ -1,11 +1,9 @@
 <?php get_header(); ?>
   <div class="wrap container-fluid">
-    <div class="services-block wrap container-fluid wrap_breadcrumbs">
-      <div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo home_url(); ?>" itemprop="url">
-        <span itemprop="title">Главная</span></a></span><span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Ремонт стиральных машин в Минске на дому</span></a></span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Бренды стиральных машин</span></a></span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span>
-      </div>
-    </div>
-
+<section class="services">
+      <div class="wrap comment-wrap container-fluid">
+        <div class="row for-sidebar">
+          <?php get_sidebar(); ?>
     <h2 class="h2-style">Цены на ремонт стиральных машин <?php the_title(); ?>  (запчасти включены)</h2>
     <div class="wrap-table table-responsive">
       <table width="100%">
@@ -30,7 +28,9 @@
       <p>&nbsp;</p>
       <span class="description-tb">*Итоговая стоимость ремонта зависит от трудоемкости работ и стоимости запасных частей.</span>
     </div>
-
+  </div>
+  </div>
+  </section>
     <div class="problem-list">
       <h2 class="h2-style">Проблемы, которые мы устраняем</h2>
       <div class="row">
@@ -103,116 +103,13 @@
         <section class="instr-ekspl">
             <h3>Инструкции по эксплуатации стиральных машин <?php the_title(); ?></h3>
             <ul>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMA_45000.pdf" target="_blank">ÖKO-LAVAMA 45000</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT__LAVALOGIC_1400_update.pdf" target="_blank" rel="">ÖKO-LAVAMAT LAVALOGIC 1400 update</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT__LAVALOGIC_1600_update.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT LAVALOGIC 1600 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT__LAVALOGIC_1800_update.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT LAVALOGIC 1800 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_1251_VI_ELECTRONIC.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT 1251 VI ELECTRONIC</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_1271_VI_ELECTRONIC.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT 1271 VI ELECTRONIC</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_1271_VI_TURBO_ELECTRONIC.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT 1271 VI TURBO ELECTRONIC</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_1451_VI_ELECTRONIC.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT 1451 VI ELECTRONIC</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_70530_update.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT 70530 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_70560_update.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT 70560 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_72620_update.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT 72620 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_74730_update.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT 74730 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg___214_KO_LAVAMAT_Jubi_Line_15_50_update.pdf" target="_blank" rel="">AEG ÖKO-LAVAMAT JUBI-LINE 15.50 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_47080.pdf" target="_blank" rel="">AEG L 47080</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_47280.pdf" target="_blank" rel="">AEG L 47280</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_47370.pdf" target="_blank" rel="">AEG L 47370</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_48580.pdf" target="_blank" rel="">AEG L 48580</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_52600.pdf" target="_blank" rel="">AEG L 52600</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_54600.pdf" target="_blank" rel="">AEG L 54600</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_60260_SL-1.pdf" target="_blank" rel="">AEG L 56006 SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_57126_SL.pdf" target="_blank" rel="">AEG L 57126 SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_58527_XFL.pdf" target="_blank" rel="">AEG L 58527 XFL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_58547_SL.pdf" target="_blank" rel="">AEG L 58547 SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_58848_FL.pdf" target="_blank" rel="">AEG L 58848 FL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_59869_FL.pdf" target="_blank" rel="">AEG L 59869 FL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_60060_TLE1.pdf" target="_blank" rel="">AEG L 60060 TLE1</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_60260_SL-1.pdf" target="_blank" rel="">AEG L 60260 SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_60260_TLE1.pdf" target="_blank" rel="">AEG L 60260 TLE1</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_60270_FL.pdf" target="_blank" rel="">AEG L 60270 FL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_60800.pdf" target="_blank" rel="">AEG L 60800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_61060_TLE.pdf" target="_blank" rel="">AEG L 61060 TLE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_61260_TLE.pdf" target="_blank" rel="">AEG L 61260 TLE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_61470_WDBI.pdf" target="_blank" rel="">AEG L 61470 WDBI</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_62800.pdf" target="_blank" rel="">AEG L 62800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_70260_TLE1.pdf" target="_blank" rel="">AEG L 70260 TLE1</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_70270_VFL.pdf" target="_blank" rel="">AEG L 70270 VFL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_71060_SL.pdf" target="_blank" rel="">AEG L 71060 SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_71260_SL.pdf" target="_blank" rel="">AEG L 71260 SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_74270_TL.pdf" target="_blank" rel="">AEG L 74270 TL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_74270_TLE.pdf" target="_blank" rel="">AEG L 74270 TLE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_75260_TL1.pdf" target="_blank" rel="">AEG L 75260 TL1</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_75260_TLE1.pdf" target="_blank" rel="">AEG L 75260 TLE1</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_75274_ESL.pdf" target="_blank" rel="">AEG L 75274 ESL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_75280_FL.pdf" target="_blank" rel="">AEG L 75280 FL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_75484_EFL.pdf" target="_blank" rel="">AEG L 75484 EFL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_85275_XFL.pdf" target="_blank" rel="">AEG L 85275 XFL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_85470_SL.pdf" target="_blank" rel="">AEG L 85470 SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_87680_FL.pdf" target="_blank" rel="">AEG L 87680 FL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_87695_WD.pdf" target="_blank" rel="">AEG L 87695 WD</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_L_98699_FL.pdf" target="_blank" rel="">AEG L 98699 FL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_15_50.pdf" target="_blank" rel="">AEG LAV 15.50</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_41380.pdf" target="_blank" rel="">AEG LAV 41380</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_45000.pdf" target="_blank" rel="">AEG LAV 45000</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_47280.pdf" target="_blank" rel="">AEG LAV 47280</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_48580.pdf" target="_blank" rel="">AEG LAV 48580</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_52600.pdf" target="_blank" rel="">AEG LAV 52600</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_54600.pdf" target="_blank" rel="">AEG LAV 54600</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_60800.pdf" target="_blank" rel="">AEG LAV 60800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_62800.pdf" target="_blank" rel="">AEG LAV 62800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_70230_W.pdf" target="_blank" rel="">AEG LAV 70230-W</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_70360.pdf" target="_blank" rel="">AEG LAV 70360</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_72628_W.pdf" target="_blank" rel="">AEG LAV 72628-W</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAV_BELLA_W.pdf" target="_blank" rel="">AEG LAV BELLA-W</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVALOGIC_1400.pdf" target="_blank" rel="">AEG LAVALOGIC 1400</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVALOGIC_1410.pdf" target="_blank" rel="">AEG LAVALOGIC 1410</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVALOGIC_1600.pdf" target="_blank" rel="">AEG LAVALOGIC 1600</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVALOGIC_1800.pdf" target="_blank" rel="">AEG LAVALOGIC 1800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVALOGIC_1810.pdf" target="_blank" rel="">AEG LAVALOGIC 1810</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT__LAVALOGIC_1410.pdf" target="_blank" rel="">AEG LAVAMAT LAVALOGIC 1410</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT__LAVALOGIC_1800.pdf" target="_blank" rel="">AEG LAVAMAT LAVALOGIC 1800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_1249.pdf" target="_blank" rel="">AEG LAVAMAT 1249</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_12843_VIT.pdf" target="_blank" rel="">AEG LAVAMAT 12843 VIT</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_14950A.pdf" target="_blank" rel="">AEG LAVAMAT 14950A</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_41070_UPDATE.pdf" target="_blank" rel="">AEG LAVAMAT 41070 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_41380_UPDATE.pdf" target="_blank" rel="">AEG LAVAMAT 41380 UPDATE</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_47080_aqua_alarm.pdf" target="_blank" rel="">AEG LAVAMAT 47080 AQUA ALARM</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_47280_aqua_alarm.pdf" target="_blank" rel="">AEG LAVAMAT 47280 AQUA ALARM</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_47330.pdf" target="_blank" rel="">AEG LAVAMAT 47330</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_47370.pdf" target="_blank" rel="">AEG LAVAMAT 47370</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_48380.pdf" target="_blank" rel="">AEG LAVAMAT 48380</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_48540.pdf" target="_blank" rel="">AEG LAVAMAT 48540</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_48580-1.pdf" target="_blank" rel="">AEG LAVAMAT 48580</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_48580_aqua_control.pdf" target="_blank" rel="">AEG LAVAMAT 48580 AQUA CONTROL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_52600.pdf" target="_blank" rel="">AEG LAVAMAT 52600</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_54600.pdf" target="_blank" rel="">AEG LAVAMAT 54600</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_60260TL.pdf" target="_blank" rel="">AEG LAVAMAT 60260TL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_60800.pdf" target="_blank" rel="">AEG LAVAMAT 60800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_60840L.pdf" target="_blank" rel="">AEG LAVAMAT 60840L</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_61470_WDBI.pdf" target="_blank" rel="">AEG LAVAMAT 61470 WDBI</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_62800.pdf" target="_blank" rel="">AEG LAVAMAT 62800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_62840L.pdf" target="_blank" rel="">AEG LAVAMAT 62840L</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_64840L.pdf" target="_blank" rel="">AEG LAVAMAT 64840L</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_70260TL.pdf" target="_blank" rel="">AEG LAVAMAT 70260TL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_71260SL.pdf" target="_blank" rel="">AEG LAVAMAT 71260SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_72750.pdf" target="_blank" rel="">AEG LAVAMAT 72750</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_72850M.pdf" target="_blank" rel="">AEG LAVAMAT 72850M</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_74750.pdf" target="_blank" rel="">AEG LAVAMAT 74750</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_76850A.pdf" target="_blank" rel="">AEG LAVAMAT 76850A</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_84950A.pdf" target="_blank" rel="">AEG LAVAMAT 84950A</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_85470SL.pdf" target="_blank" rel="">AEG LAVAMAT 85470SL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_88489FL.pdf" target="_blank" rel="">AEG LAVAMAT 88489FL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_98699FL.pdf" target="_blank" rel="">AEG LAVAMAT 98699FL</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_LS_60840L.pdf" target="_blank" rel="">AEG LAVAMAT LS 60840L</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_LS_62840L.pdf" target="_blank" rel="">AEG LAVAMAT LS 62840L</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_LS_70840.pdf" target="_blank" rel="">AEG LAVAMAT LS 70840</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_LS_72840.pdf" target="_blank" rel="">AEG LAVAMAT LS 72840</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LAVAMAT_LS_84840.pdf" target="_blank" rel="">AEG LAVAMAT LS 84840</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LL_1400.pdf" target="_blank" rel="">AEG LL 1400</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LL_1800.pdf" target="_blank" rel="">AEG LL 1800</a></li>
-                <li><a href="http://rem-service.by/wp-content/uploads/2016/03/Aeg_LL_1810.pdf" target="_blank" rel="">AEG LL 1810</a></li>
+                <?php if( have_rows('instruction') ): while ( have_rows('instruction') ) : the_row(); ?>
+                <li>
+                    <a href="<?php the_permalink(); ?>" target="_blank">
+                        <?php the_sub_field('ins_name'); ?>
+                    </a>
+                </li>
+                <?php endwhile; endif; ?>
             </ul>
             <p>&nbsp;</p>
         </section>

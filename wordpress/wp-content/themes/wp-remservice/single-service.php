@@ -1,17 +1,10 @@
 <?php get_header(); ?>
     <div class="wrap container-fluid">
-        <div class="services-block wrap container-fluid wrap_breadcrumbs">
-            <div class="breadcrumbs">
-            <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-            <a href="<?php echo home_url(); ?>" itemprop="url">
-            <span itemprop="title">Главная</span>
-            </a>
-            </span>
-            <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Ремонт стиральных машин в Минске на дому</span></a>
-                </span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Узлы стиральных машин</span></a>
-                </span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div>
-            <!-- .breadcrumbs -->
-        </div>
+        <section class="services">
+      <div class="wrap comment-wrap container-fluid">
+        <div class="row for-sidebar">
+          <?php get_sidebar(); ?>
+          <div class="col-md-9">
         <h2 class="h2-style-price">Цена услуги (с запчастями): <?php the_field('price'); ?> тыс. рублей.</h2>
         <div class="text-content">
             <!-- <div class="services-block wrap container-fluid wrap_breadcrumbs">
@@ -28,6 +21,9 @@
             </article>
             <!-- #post-## -->
         </div>
+      </div>
+    </div>
+  </section>
         <noindex>
             <h2 class="h2-style-price">Цена услуги (с запчастями): <?php the_field('price'); ?> рублей.</h2>
             <section class="block-form wrap container-fluid">
@@ -132,6 +128,7 @@
       </div>
     </div>
   </div><!--list-info-->
+  </div>
         <!-- ------------------------------------------------------------------ -->
         <!-- ------------------------------------------------------------------ -->
     </div>

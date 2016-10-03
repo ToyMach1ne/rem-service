@@ -5,12 +5,6 @@
             <div class="row">
                 <?php get_sidebar(); ?>
                 <div class="col-lg-9 cont-block">
-                    <div class="wrap container-fluid wrap_breadcrumbs sovet">
-                        <div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a>
-                            </span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">Полезные советы</span></a>
-                            </span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div>
-                        <!-- .breadcrumbs -->
-                    </div>
                     <h1><?php the_title(); ?></h1>
 
                     <div class="cont-all">
